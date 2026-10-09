@@ -3,14 +3,16 @@ main = "src/index.ts"
 compatibility_date = "2026-09-01"
 keep_vars = true
 
+# 部署时填写你自己的域名（勿提交真实域名）
 routes = [
-  { pattern = "cardverify.654645.xyz", custom_domain = true }
+  { pattern = "your-domain.example.com", custom_domain = true }
 ]
 
 [[d1_databases]]
 binding = "card_infos"
 database_name = "card-verify"
-database_id = "d4204e44-a3a8-4e55-b07a-52b1c1de3b31"
+# 填写你的 D1 database_id（wrangler d1 list 查询）
+database_id = "YOUR_D1_DATABASE_ID"
 migrations_dir = "migrations"
 
 [vars]
@@ -18,4 +20,5 @@ POW_DIFFICULTY = "4"
 
 [[kv_namespaces]]
 binding = "cache"
-id = "99da98d03cae4872897a16ebedd9725d"
+# 填写你的 KV namespace id（wrangler kv namespace list 查询）
+id = "YOUR_KV_NAMESPACE_ID"

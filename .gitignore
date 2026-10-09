@@ -7,6 +7,7 @@ ed_pub.txt
 .dev.vars
 .env
 .env.*
+wrangler.local.toml
 
 # dependencies / build outputs
 node_modules/
