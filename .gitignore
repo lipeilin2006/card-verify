@@ -1,0 +1,38 @@
+# secrets — never commit
+aes256.txt
+apikey.txt
+ed_priv.txt
+ed_pub.txt
+*.pem
+.dev.vars
+.env
+.env.*
+
+# dependencies / build outputs
+node_modules/
+dist/
+target/
+.wrangler/
+.gradle/
+build/
+.card-manage-tauri/src-tauri/gen/android/app/build/
+
+# binaries & installers
+releases/
+*.apk
+*.aab
+*.exe
+*.msi
+
+# android signing (private keys / passwords)
+**/release.keystore
+**/keystore.properties
+
+# app local config (contains keys)
+card-manage/config.json
+card-verify-test/config.json
+
+# misc
+*.log
+.DS_Store
+Thumbs.db

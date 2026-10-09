@@ -1,0 +1,22 @@
+{
+  "name": "card-verify-cloudflare",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/service.test.ts",
+    "keys:generate": "node scripts/generate-server-key.mjs",
+    "admin:create-card": "node scripts/admin-create-card.mjs",
+    "admin:set-version": "node scripts/admin-set-version.mjs",
+    "db:init:local": "wrangler d1 execute card_infos --local --file=./migrations/0001_init.sql",
+    "db:init": "wrangler d1 execute card_infos --remote --file=./migrations/0001_init.sql"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0",
+    "wrangler": "^4.0.0"
+  }
+}

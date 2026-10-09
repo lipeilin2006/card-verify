@@ -1,0 +1,21 @@
+name = "card-verify"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+keep_vars = true
+
+routes = [
+  { pattern = "cardverify.654645.xyz", custom_domain = true }
+]
+
+[[d1_databases]]
+binding = "card_infos"
+database_name = "card-verify"
+database_id = "d4204e44-a3a8-4e55-b07a-52b1c1de3b31"
+migrations_dir = "migrations"
+
+[vars]
+POW_DIFFICULTY = "4"
+
+[[kv_namespaces]]
+binding = "cache"
+id = "99da98d03cae4872897a16ebedd9725d"

@@ -1,0 +1,5 @@
+{
+  "worker_url": "https://your-worker.workers.dev",
+  "manager_apikey": "your-manager-apikey",
+  "aes_key": "your-aes-256-base64-key"
+}

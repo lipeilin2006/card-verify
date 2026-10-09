@@ -1,0 +1,5 @@
+{
+  "worker_url": "https://cardverify.654645.xyz",
+  "aes_key": "your-aes-256-base64-key",
+  "server_public_key": "-----BEGIN PUBLIC KEY-----\nyour-ed25519-public-key-base64\n-----END PUBLIC KEY-----"
+}
